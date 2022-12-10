@@ -1,0 +1,19 @@
+{
+  "name": "poc-mitmproxy-tinder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "poc-mitmproxy-tinder.py",
+  "type": "module",
+  "author": "Glenn 'devalias' Grant (devalias.net)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run mitmproxy:start",
+    "mitmproxy:install": "pip install mitmproxy==4.0.4",
+    "mitmproxy:start": "mitmweb --allow-hosts '^api\\.gotinder\\.com$' --scripts poc-mitmproxy-tinder.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.12",
+    "tsx": "^3.12.1"
+  }
+}
